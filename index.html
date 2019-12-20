@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>SsuSsu Poltfolio</title>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/font/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+        <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">-->
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/include.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+        <script src="js/slick.js" type="text/javascript"></script>
+        <script src="js/fullpage.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#fullpage').fullpage({
+                    //이동
+                        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+                        menu: '#gnb',
+                    //스크롤
+                    scrollingSpeed: 1000,
+                    
+                    //디자인
+                    
+	           });
+                $(".panelBg").hide();
+                $(".panel").click(function(){
+                    $(".panelBg").fadeIn();
+                    $(".panelM").css("width","960px");
+                })
+                $(".closeBtn,.panelBg").click(function(){
+                    $(".panelM").css("width","0");
+                    $(".panelBg").fadeOut();
+                });
+                $(".variable").slick({
+                    dots: false,
+                    infinite: true,
+                    variableWidth: true
+                });
+            })
+        </script>
+    </head>
+    <body>
+    <div class="wrap">
+       <ul id="gnb">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage"><img src="images/gnb_deco.png"> Main</a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage"><img src="images/gnb_deco.png"> About me</a></li>
+            <li data-menuanchor="thirdPage"><a href="#thirdPage"><img src="images/gnb_deco.png"> My work</a></li>
+            <li data-menuanchor="fourthPage"><a href="#fourthPage"><img src="images/gnb_deco.png"> footer</a></li>
+        </ul>
+        <div id="fullpage">
+           <!--헤더-->
+            <div class="header section active" id="section0">
+                <h1><img src="images/logo.png"></h1>
+                <p>쑤<img src="images/header_ico.png">쑤</p>
+                <div class="hR">쑤쑤 포트폴리오</div>
+            </div>
+           <!--헤더-->
+           <!--about-->
+            <div class="section" id="section1">
+               <div class="slideWrap inner">
+                    <div class="slide slide01 active">
+                        <div class="aboutWrap">
+                            <dl>
+                                <dt><img src="images/deco1.png" width="35px">새나라의 신입 디자이너 '강수현' 입니다</dt>
+                                <dd>姜秀炫</dd>
+                                <dd>99.07.19</dd>
+                                <dd>010.4866.0772</dd>
+                                <dd>suhyeon533@gmail.com</dd>
+                                <dd>경상남도 양산시 동면</dd>
+                            </dl>
+                            <div class="my">
+                                <img src="images/about_me.png">
+                                <div class="chara"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide02">
+                        <h2><img src="images/deco2.png" width="20px"> I can do this! <img src="images/deco2.png" width="20px"></h2>
+                        <ul class="ico ico01 cf">
+                            <li><p>포토샵<span>90%</span></p></li>
+                            <li><p>일러스트<span>90%</span></p></li>
+                            <li><p>인디자인<span>80%</span></p></li>
+                            <li><p>라이노3D<span>70%</span></p></li>
+                        </ul>
+                        <ul class="ico ico02 cf">
+                            <li><p>3D맥스<span>50%</span></p></li>
+                            <li><p>HTML<span>90%</span></p></li>
+                            <li><p>CSS<span>90%</span></p></li>
+                            <li><p>Jquary<span>80%</span></p></li>
+                        </ul>
+                    </div>
+                    <div class="slide slide03">
+                        <p><img src="images/about_Ssu.png"><br>
+                        '쑤쑤'는 제 이름 '강수현'에서 따온거랍니다.<br>제 이름의 '수'는 한자로 '빼어날 수 秀'를 사용하기 때문에<br>저의 로고도 두 한자가 겹쳐져 '쑤쑤'가 된 것이죠.<br>한자가 따블인만큼 저의 빼어남은 따따블입니다:)</p>
+                    </div>
+                </div>
+                <div class="cL">It's me!</div>
+            </div>
+           <!--about-->
+           <!--컨텐츠-->
+            <div class="section" id="section2">
+                <p class="cR">My work</p>
+                <div class="another inner">
+                    <p class="more">
+                      <a href="#">더보기<img src="images/menubar_bg.png"></a>
+                    </p>
+                  <div class="deco">
+                      <img src="images/deco1.png" class="deco01" width="100px">
+                      <img src="images/deco2.png" class="deco02" width="90px">
+                      <img src="images/deco3.png" class="deco03" width="90px">
+                      <img src="images/deco4.png" class="deco04" width="100px">
+                      <img src="images/deco5.png" class="deco05" width="100px">
+                      <img src="images/deco6.png" class="deco06" width="120px">
+                      <img src="images/deco7.png" class="deco07" width="100px">
+                      <img src="images/deco1.png" class="deco08" width="100px">
+                      <img src="images/deco4.png" class="deco09" width="100px">
+                  </div>
+                </div>
+                <section class="variable slider inner">
+                    <div>
+                        <a href="#">
+                            <img src="images/conB1.png">
+                            <p class="letter">2019.11</p>
+                        </a>
+                    </div>
+                    <div class="ano">
+                        <a href="#">
+                            <img src="images/conB2.png">
+                            <p class="letter">2019.11</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/conB3.png">
+                            <p class="letter">2019.12</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/conB11.png">
+                            <p class="letter">2017.11</p>
+                        </a>
+                    </div>
+                    <div class="ano">
+                        <a href="#">
+                            <img src="images/conB14.png">
+                            <p class="letter">2016.10</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/conB15.png">
+                            <p class="letter">2017.11</p>
+                        </a>
+                    </div>
+                    <div class="ano">
+                        <a href="#">
+                            <img src="images/conB10.png">
+                            <p class="letter">2017.02</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/conB16.png">
+                            <p class="letter">2018.09</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/conB17.png">
+                            <p class="letter">2017.11</p>
+                        </a>
+                    </div>
+              </section>
+            </div>
+           <!--컨텐츠-->
+            <div class="section fp-auto-height" id="section3">
+                <p>Copy ⓒ Suhyeon533 Kang. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    </body>

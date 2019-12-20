@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/*헤더*/
+.header{
+    background:url(../images/header_bg.png) no-repeat;
+    color:#fdf3f0;
+    text-align:center;
+    overflow:hidden;
+    position:relative;
+}
+.header img{
+    display:inline-block;
+}
+.header p{
+    font-size:18px;
+    font-weight:100;
+} 
+.header p img{
+    vertical-align:middle;
+    margin:0 3px; 
+    transform:scale(0.95);
+}
+
+.hR{
+    font-size:20px;
+    font-weight:100;
+    transform:rotate(90deg);
+    position:absolute;
+    right:-430px;
+    bottom:490px;
+    color:#fdf3f0;
+}
+.hR:before{
+    content:"";
+    display:inline-block;
+    width:800px;
+    height:1px;
+    background:#fdf3f0;
+    margin-right:25px;
+    vertical-align:middle;
+}
+
+/*푸터*/
+#section3 p{
+    text-align:center;
+    color:#fdf3f0;
+    padding:60px 0;
+    background:#24152a;
+}
