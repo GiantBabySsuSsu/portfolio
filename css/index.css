@@ -31,7 +31,7 @@
     position:fixed;
     top:50px;;
     left:50%;
-    margin-left:-300px;
+    margin-left:-225px;
     z-index:999;
 }
 #gnb li{
@@ -70,11 +70,11 @@
 }
 #section1 .fp-prev{
     background:url(../images/about_arr1.png) no-repeat;
-    left:15%;
+    left:100px;
 }
 #section1 .fp-next{
     background:url(../images/about_arr2.png) no-repeat;
-    right:15%;
+    right:50px;
 }
 
 #section1 .slide{}
