@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/*헤더*/
+#header{}
+
+#header .topBg{
+    width:100%;
+    height:420px;
+    background:url(../../images/top_bg.png) no-repeat center center;
+    background-size:cover;
+    position:absolute;
+    left:50%;
+    margin-left:-50%;
+}
+
+#header h1{
+    padding:380px 0 50px 0;
+    position:relative;
+    z-index:1
+}
+#header h1 a{
+    display:block;
+    width:100px;
+    margin:0 auto;
+}
+#header h1 img{
+    display:block;
+    width:100px;
+}
+
+.slnb{
+    width:540px;
+    margin:0 auto;
+}
+.slnb a{
+    display:block;
+    font-size:23px;
+    color:#fffb8d;
+}
+.slnb li .menuT{
+    display:block;
+    margin:0 auto;
+    padding-bottom:7px;
+}
+.slnb li{
+    float:left;
+    width:120px;
+    padding-top:21px;
+    text-align:center;
+    margin-left:20px;
+    opacity:0.3;
+    position:relative;
+}
+.slnb li:nth-child(2){
+    margin:0;
+    padding-top:0;
+    opacity:1;
+}
+.slnb li:after{
+    content:"";
+    display:block;
+    width:0;
+    height:3px;
+    margin-left:20px;
+    margin-top:7px;
+    background:#fffb8d;
+}
+.slnb li:nth-child(2):after{
+    display:none;
+}
+.slnb li .menuB{
+    position:absolute;
+    right:12px;
+    bottom:-4px;
+    opacity:0;
+}
+.slnb li:hover{
+    opacity:1;
+}
+.slnb li:hover:after{
+    transition:width 1s;
+    width:68px;
+}
+.slnb li:hover .menuB{
+    transition:transform 1.5s;
+    transform:rotate(144deg);
+    opacity:1;
+}
+
+
+/*푸터*/
+#footer{
+    text-align:center;
+    color:#24152a;
+    padding:60px 0;
+}
+
+/*top*/
+.topBtn{
+    width:100px;
+    height:100px;
+    background:url(../../images/deco4.png) no-repeat;
+    background-size: cover;
+    position:fixed;
+    bottom:10px;
+    right:30px;
+}
+.topBtn a{
+    display:block;
+    text-align:center;
+    line-height:100px;
+    color:coral;
